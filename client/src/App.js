@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { FileUploader } from "react-drag-drop-files";
+import UploadForm from './uploadFile';
 
 function App() {
   const [tokens, setTokens] = useState('');
@@ -72,8 +73,10 @@ function App() {
     }}>
       DocProc
     </div>
-    {!uploaded && <FileUploader handleChange={handleUpload} name="userData" types={fileTypes}/>}
-    {!uploaded && <button onClick={handleDataUpload}>Upload</button>}
+    {/* {!uploaded && <FileUploader handleChange={handleUpload} name="userData" types={fileTypes}/>}
+    {!uploaded && <button onClick={handleDataUpload}>Upload</button>} */}
+    <h1> Upload Form </h1>
+    <UploadForm />
     <div>
       <form onSubmit={handleSubmit} style={{marginBottom : "20px", marginTop: "20px"}}>
         <input 
