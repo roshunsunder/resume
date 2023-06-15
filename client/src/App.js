@@ -3,6 +3,7 @@ import { FileUploader } from "react-drag-drop-files";
 import UploadForm from './uploadFile';
 import { useDropzone } from 'react-dropzone';
 import './App.css';
+import DarkTextBox from './darkTextBox';
 
 // function App() {
 //   const [tokens, setTokens] = useState('');
@@ -12,7 +13,42 @@ import './App.css';
 //   const [res, setRes] = useState('');
 //   const fileTypes = ["PDF", "CSV", "DOCX", "ZIP"]
 
-//   const handleSubmit = async (event) => {
+
+//   return (
+  //     <>
+  //     <div style={{
+    //       fontFamily:"SF Pro",
+    //       fontWeight:"bold",
+    //       display: 'flex',
+    //       alignItems: 'center',
+    //       justifyContent: 'center',
+    //       padding: '20px',
+    //       textAlign: 'center',
+    //     }}>
+    //       DocProc
+    //     </div>
+    //     {/* {!uploaded && <FileUploader handleChange={handleUpload} name="userData" types={fileTypes}/>}
+  //     {!uploaded && <button onClick={handleDataUpload}>Upload</button>} */}
+  //     <h1> Upload Form </h1>
+  //     <UploadForm />
+  //     <div>
+  // <form onSubmit={handleSubmit} style={{marginBottom : "20px", marginTop: "20px"}}>
+  //   <input 
+  //     type="text" 
+  //     value={tokens} 
+  //     onChange={(event) => setTokens(event.target.value)} 
+  //     placeholder = "Write Query Here"
+  //     style={{display: 'flex', fontFamily:"SF Pro", border:"none", width:"100vh", textAlign:"left", verticalAlign:"top", paddingBottom:"20vh", outline:"none", wordWrap:"break-word", whiteSpace:"pre-wrap"}}
+  //   />
+  //   <button type="submit">Submit</button>
+  // </form>
+  
+  //       {res ? <div style={{fontFamily:"SF Pro"}}>{res}</div> : <div style={{fontFamily:"SF Pro"}}>{status}</div>}
+  //     </div>
+  //     </>
+  //   )
+  // }
+  // const handleSubmit = async (event) => {
   //   event.preventDefault()
   //   setRes('')
   //   setStatus('Loading...')
@@ -35,45 +71,14 @@ import './App.css';
   //     console.error(error);
   //   }
   // };
-
-//   return (
-//     <>
-//     <div style={{
-//       fontFamily:"SF Pro",
-//       fontWeight:"bold",
-//       display: 'flex',
-//       alignItems: 'center',
-//       justifyContent: 'center',
-//       padding: '20px',
-//       textAlign: 'center',
-//     }}>
-//       DocProc
-//     </div>
-//     {/* {!uploaded && <FileUploader handleChange={handleUpload} name="userData" types={fileTypes}/>}
-//     {!uploaded && <button onClick={handleDataUpload}>Upload</button>} */}
-//     <h1> Upload Form </h1>
-//     <UploadForm />
-//     <div>
-      // <form onSubmit={handleSubmit} style={{marginBottom : "20px", marginTop: "20px"}}>
-      //   <input 
-      //     type="text" 
-      //     value={tokens} 
-      //     onChange={(event) => setTokens(event.target.value)} 
-      //     placeholder = "Write Query Here"
-      //     style={{display: 'flex', fontFamily:"SF Pro", border:"none", width:"100vh", textAlign:"left", verticalAlign:"top", paddingBottom:"20vh", outline:"none", wordWrap:"break-word", whiteSpace:"pre-wrap"}}
-      //   />
-      //   <button type="submit">Submit</button>
-      // </form>
-      
-//       {res ? <div style={{fontFamily:"SF Pro"}}>{res}</div> : <div style={{fontFamily:"SF Pro"}}>{status}</div>}
-//     </div>
-//     </>
-//   )
-// }
 const App = () => {
-  const [documentContent, setDocumentContent] = useState('haha');
+  const [documentContent, setDocumentContent] = useState('');
   const [uploadedFile, setUploadedFile] = useState(null);
   const [job, setJob] = useState('');
+
+  const handleChange = (event) => {
+    setJob(event.target.value);
+  }
 
   const FileUpload = ({ onUpload }) => {
     const { getRootProps, getInputProps } = useDropzone({
@@ -99,7 +104,32 @@ const App = () => {
   };
 
 
-  const handleUpload = async (uploadedDocument) => {
+  const submitFunc = async (event) => {
+    event.preventDefault();
+    if (uploadedFile == null) {
+      console.error('No file uploaded!');
+      return;
+    } else if (job === '') {
+      console.error('Please include a job description!');
+      return;
+    }
+
+
+    setDocumentContent('Loading...');
+    const superForm = new FormData();
+    superForm.append('job',job);
+    superForm.append('file', uploadedFile.get('file'));
+    try {
+      const response = await fetch('/query', {
+        method: 'POST',
+        body : superForm
+      }).then(res => res.json()).then(data => {
+        setDocumentContent(data['Result'])
+      });
+    } catch (error) {
+      console.log(error);
+    }
+
     return;
   };
 
@@ -110,16 +140,7 @@ const App = () => {
       </header>
       <main>
         <FileUpload />
-        <form onSubmit={handleUpload} style={{marginBottom : "20px", marginTop: "20px"}}>
-          <input 
-            type="text" 
-            value={job} 
-            onChange={(event) => setJob(event.target.value)} 
-            placeholder = "Simply paste job description here"
-            style={{display: 'flex', fontFamily:"SF Pro", border:"none", width:"100vh", textAlign:"left", verticalAlign:"top", paddingBottom:"20vh", outline:"none", wordWrap:"break-word", whiteSpace:"pre-wrap"}}
-          />
-          <button type="submit">Submit</button>
-        </form>
+        <DarkTextBox submitFunction={submitFunc} handleChange={handleChange}/>
         {documentContent && (
           <div className="document-content">
             <h2>Processed Document</h2>

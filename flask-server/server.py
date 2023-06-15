@@ -32,14 +32,16 @@ def get_completion(prompt, model="gpt-4", temp=0):
 @app.route("/query", methods=['POST'])
 def query():
     # This handles the job description
-    job_desc = request.json['tokens']
-
+    job_desc = request.form.get('job')
+    f = request.files.get('file')
+    filename = secure_filename(f.filename)
+    f.save(filename)
+    
     # This gets the data from the resume as a string
-    doc = Document(curr_filename)
+    doc = Document(filename)
     resume = ""
     for para in doc.paragraphs:
         resume += para.text + '\n'
-    print(job_desc)
 
     json_prompt = f"""
     Given this XML-formatted resume that is delimited by triple backticks, \
@@ -81,36 +83,6 @@ def query():
     res = get_completion(final_prompt)
     return {"Result" : res}
 
-# @app.route("/upload", methods=['POST'])
-# def upload():
-#     destination_folder = f'client_data/{client_id}_client_files'
-#     os.makedirs(destination_folder, exist_ok=True)
-#     f = request.files['file']
-#     ftype = request.form['filetype']
-#     fname = request.form['fname']
-#     def upload_zip():
-#         f.save(f"client_data/{client_id}_data_archive.zip")
-
-#         with zipfile.ZipFile(f, 'r') as zip_ref:
-#             for member in zip_ref.infolist():
-#                 # construct the destination path for each file
-#                 extracted_path = os.path.join(destination_folder, member.filename)
-
-#                 # extract the file to the destination path
-#                 zip_ref.extract(member, destination_folder)
-#     def upload_file():
-#         f.save(f"{destination_folder}/{client_id}_{fname}")
-    
-#     if ftype not in filetype_encodings:
-#         return "Unrecognized file format"
-    
-#     extension = filetype_encodings[ftype]
-#     if extension == "zip":
-#         upload_zip()
-#     else:
-#         upload_file()
-
-#     return {"res" : "Uploaded to Flask!"}
 @app.route("/upload", methods=['POST'])
 def upload():
     global curr_filename
