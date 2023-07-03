@@ -9,6 +9,7 @@ import openai
 
 from docx import Document
 from dotenv import load_dotenv
+from pdf import PDFWrapper
 
 
 app = Flask(__name__)

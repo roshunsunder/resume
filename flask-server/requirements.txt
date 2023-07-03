@@ -16,3 +16,4 @@ python-magic-bin
 nltk
 magic
 openai
+fpdf2
