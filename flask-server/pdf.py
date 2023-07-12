@@ -28,6 +28,16 @@ class PDFWrapper():
         self.pdf.line(self.indent, curr_y, self.pdf.epw + self.indent, curr_y)
         self.pdf.ln(h=2)
     
+    def chars_left(self):
+        chars_per_line = self.pdf.epw / self.pdf.font_size
+        vertical_space_left = self.pdf.y - self.pdf.b_margin
+        lines = vertical_space_left / self.pdf.font_size
+        chars = int(lines * chars_per_line)
+        self.pdf.ln(self.newline)
+        for i in range(2348):
+            self.pdf.write(txt='c')
+        return chars
+    
     def add_title(
             self,
             name: str,
@@ -75,7 +85,6 @@ class PDFWrapper():
         self.pdf.set_font('Times', 'B', size=10)
         self.pdf.cell(w=0, h=0, align='L', txt=name)
         self.__add_line()
-        print(data)
         for entry in data:
             self.__add_job_title(entry['company'], entry['title'], entry['location'], entry['start'], entry['end'])
             self.__bulleted_list(entry['description'])
@@ -106,3 +115,14 @@ class PDFWrapper():
 
 
         self.pdf.ln(self.newline + 10)
+
+string = """
+\n[\n  {\n    "company": "Cedar Inc.",\n    "title": "Software Engineering Intern",\n    "start": "May 2022",\n    "end": "August 2022",\n    "location": "New York, NY",\n    "description": [\n      "Designed and developed software solutions in Python and Django for a FinTech unicorn in an Agile environment, demonstrating solid computer science fundamentals.",\n      "Developed a notification system to streamline patient communication, showcasing excellent problem-solving skills.",\n      "Deployed code to a production environment, managing multiple tasks in a dynamic environment and reducing unnecessary call volume by over 95%."\n    ]\n  },\n  {\n    "company": "Neck App",\n    "title": "Software Engineering Intern",\n    "start": "May 2021",\n    "end": "September 2021",\n    "location": "New York, NY",\n    "description": [\n      "Designed and developed a referral program for a FinTech application using React and Typescript, demonstrating proficiency in multiple programming languages.",\n      "Managed a DocumentDB database deployment on Amazon EC2, showcasing a proven track record in software development.",\n      "Gained experience with AWS and Linux instances, furthering technical skills.",\n      "Worked on rapid sprint timelines, demonstrating strong communication and teamwork skills while ensuring data security."\n    ]\n  }\n]\n
+"""
+
+pdf = PDFWrapper()
+pdf.add_title('Roshun Sunder', '508 W 114th St, New York, NY 10025', 'roshun.sunder@gmail.com', '503-686-3249', 'roshunsunder.com')
+pdf.add_education('Columbia University', 'New York, NY', 'May 2024', 'Computer Science', degree='BA', GPA='3.8')
+pdf.add_generic_section('EXPERIENCE', json.loads(string))
+pdf.chars_left()
+pdf.output('automated.pdf')

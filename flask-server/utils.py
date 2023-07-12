@@ -30,7 +30,8 @@ def naked_query(job_desc: str, input_json: str):
     JOB DESCRIPTION: ```{job_desc}```
 
     Now, rewrite and return the following roles and responsibilities of the candidate to better \
-    match the keywords of the job description.
+    match the keywords of the job description. If the candidate has included numbers quanitfying \
+    impact, try to include them in your final result.
 
     Return only well-formatted JSON. The character count for all the experiences should not total more than 1450 characters.
     CANDIDATE EXPERIENCE JSON: {input_json}"""

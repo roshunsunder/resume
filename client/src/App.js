@@ -1,3 +1,4 @@
+/*
 import React, {useState, useEffect} from 'react';
 import { FileUploader } from "react-drag-drop-files";
 import UploadForm from './uploadFile';
@@ -5,72 +6,6 @@ import { useDropzone } from 'react-dropzone';
 import './App.css';
 import DarkTextBox from './darkTextBox';
 
-// function App() {
-//   const [tokens, setTokens] = useState('');
-//   const [status, setStatus] = useState('')
-//   const [uploaded, setUploaded] = useState(false);
-//   const [userData, setUserData] = useState(null);
-//   const [res, setRes] = useState('');
-//   const fileTypes = ["PDF", "CSV", "DOCX", "ZIP"]
-
-
-//   return (
-  //     <>
-  //     <div style={{
-    //       fontFamily:"SF Pro",
-    //       fontWeight:"bold",
-    //       display: 'flex',
-    //       alignItems: 'center',
-    //       justifyContent: 'center',
-    //       padding: '20px',
-    //       textAlign: 'center',
-    //     }}>
-    //       DocProc
-    //     </div>
-    //     {/* {!uploaded && <FileUploader handleChange={handleUpload} name="userData" types={fileTypes}/>}
-  //     {!uploaded && <button onClick={handleDataUpload}>Upload</button>} */}
-  //     <h1> Upload Form </h1>
-  //     <UploadForm />
-  //     <div>
-  // <form onSubmit={handleSubmit} style={{marginBottom : "20px", marginTop: "20px"}}>
-  //   <input 
-  //     type="text" 
-  //     value={tokens} 
-  //     onChange={(event) => setTokens(event.target.value)} 
-  //     placeholder = "Write Query Here"
-  //     style={{display: 'flex', fontFamily:"SF Pro", border:"none", width:"100vh", textAlign:"left", verticalAlign:"top", paddingBottom:"20vh", outline:"none", wordWrap:"break-word", whiteSpace:"pre-wrap"}}
-  //   />
-  //   <button type="submit">Submit</button>
-  // </form>
-  
-  //       {res ? <div style={{fontFamily:"SF Pro"}}>{res}</div> : <div style={{fontFamily:"SF Pro"}}>{status}</div>}
-  //     </div>
-  //     </>
-  //   )
-  // }
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault()
-  //   setRes('')
-  //   setStatus('Loading...')
-  //   if (tokens === '') {
-  //     return;
-  //   }
-  //   try {
-  //     const response = await fetch('/query', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       },
-  //       body: JSON.stringify({ "tokens" : tokens, "client-id" : "dummy-id-2467" })
-  //     }).then(
-  //       res => res.json()
-  //     ).then((
-  //       data => setRes(data.Result)
-  //     ));
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
 const App = () => {
   const [documentContent, setDocumentContent] = useState('');
   const [uploadedFile, setUploadedFile] = useState(null);
@@ -153,3 +88,59 @@ const App = () => {
 };
 
 export default App
+*/
+
+import React, { useState } from 'react';
+
+const App = () => {
+  const [resume, setResume] = useState('');
+  const [jobDesc, setJobDesc] = useState('');
+
+  const handleResumeChange = (event) => {
+    setResume(event.target.value);
+  };
+
+  const handleJobDescChange = (event) => {
+    setJobDesc(event.target.value);
+  };
+
+  return (
+    <div
+      style={{
+        backgroundColor: 'black',
+        fontFamily: 'sans-serif',
+        margin: '2rem',
+        padding: '2rem',
+        color: 'white',
+        textAlign: 'center',
+      }}
+    >
+      <h1>Resume Builder</h1>
+      <h2>Hello User</h2>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div style={{ width: '50%', marginRight: '1rem' }}>
+          <label style={{ display: 'block', marginBottom: '0.5rem' }}>
+            Paste your resume here.
+          </label>
+          <textarea
+            value={resume}
+            onChange={handleResumeChange}
+            style={{ width: '100%', minHeight: '200px' }}
+          />
+        </div>
+        <div style={{ width: '50%', marginLeft: '1rem' }}>
+          <label style={{ display: 'block', marginBottom: '0.5rem' }}>
+            Place your job description here.
+          </label>
+          <textarea
+            value={jobDesc}
+            onChange={handleJobDescChange}
+            style={{ width: '100%', minHeight: '200px' }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
