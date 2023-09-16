@@ -3,3 +3,4 @@ node_modules
 .env
 virtualenv
 *.docx
+__pycache__
