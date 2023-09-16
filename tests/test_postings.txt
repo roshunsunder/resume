@@ -1,0 +1,65 @@
+Virtu is an industry-leading financial technology firm that operates both proprietary trading and client-facing businesses in the global financial marketplace. Our cutting edge, proprietary technology is core to everything we do. We trade in over 35 countries, across 235 financial exchanges and over 25% of retail order flow in the US. is serviced by Virtu. 
+ 
+Our team is a dedicated group of traders, quants and developers that are inspired by the unique and exciting challenges we solve every day. Our culture combines the creativity of a fast paced start up, with the stability of a disciplined financial services firm. We are a flat organization and encourage our people to innovate and lean on their teammates for support and collaboration. We have fun, work hard and strive to be virtuous in all we do. 
+DEVELOPER INTERNSHIP
+Virtu's internship program offers students an extraordinary opportunity to learn about the firm and the world’s financial markets. We have built a thoughtful and challenging curriculum that introduces students to all aspects of Virtu's business through a company-curated global training week, real world development projects to complete and engaging social events to get to know our team and culture. 
+Location: Austin, New York
+Dates: 10 week program, starting June 10th, 2024 - August 16th, 2024 (with flexibility if needed)
+Training: Ongoing training throughout the summer and a training week held in New York or Austin 
+Projects: Real problems to solve throughout the program. Interns will work from a list of projects and have several senior mentors throughout the summer program.
+Our development team is a highly talented group of versatile software engineers. These engineers are responsible for the design, development and optimization of our proprietary, low-latency trading systems as well as our propriety trading algorithms. This team also creates powerful trading tools, which facilitate all trading stages of our high-performance system which is deployed in financial marketplaces around the world.
+
+As an intern, you will complete a variety of challenging development projects. You'll work alongside our senior team to improve scalability, performance and efficiency of our cutting edge trading systems. This is a rare opportunity for students to learn first hand how to design and architect a trading system for scale and to support the massive amounts of data that flow through Virtu's trading systems daily.   
+
+REQUIREMENTS
+Excellent academic background in Computer Science, Electrical Engineering or related field
+Strong programming skills in Python and either Java or C++
+Experience with Javascript a plus
+Some lower level programming experience a plus but not required
+Outstanding quantitative problem‐solving skills and mathematical aptitude
+Being comfortable with a wide variety of projects (frontend/backend, different programming languages)
+A physicalizer; a person who identifies issues and creates solutions without rigid direction or fanfare
+Highly motivated and tenacious individual, with a proven ability to take initiative and work independently and within a team
+Team player: authentic, genuine person who is capable of working collective goals.
+THE PROCESS
+ 
+After applicants pass an initial resume screening, an online programming test will be sent via email. This test is from a service called Codility so please be on the lookout. After passing the programming test, we will contact you to arrange a phone screen. We are looking forward to meeting you!
+ 
+Salary Range: $3,000 - $4500 weekly (salary range is exclusive of sign on bonuses, housing, meals, benefits or any other forms of compensation) 
+
+### DELIM ###
+
+Who we are
+About Stripe
+Stripe is a financial infrastructure platform for businesses. Millions of companies—from the world’s largest enterprises to the most ambitious startups—use Stripe to accept payments, grow their revenue, and accelerate new business opportunities. Our mission is to increase the GDP of the internet, and we have a staggering amount of work ahead. That means you have an unprecedented opportunity to put the global economy within everyone’s reach while doing the most important work of your career.
+
+About the team
+Our internship program will provide an opportunity to work on meaningful products that will grow the GDP of the internet. Through the internship, you will work with many systems and technologies, gain experience in systems design and testing, and have opportunities to present your work to your team and the wider org. Each intern has a dedicated intern manager, and every project is part of the team’s roadmap and will directly help Stripe’s mission.
+
+What you’ll do
+Every internship at Stripe centers around a real, legitimate project that our customers urgently need, touching many parts of our operations and stack. We will support you in shipping it. Yes, you will actually ship it. Some recent projects include rebuilding our statistics aggregation service, building new service discovery systems, and many user facing projects like making it easy to understand error messages on Stripe Checkout. As a Stripe intern, you'll be tackling important projects to increase global commerce, while working alongside exceptional people who insist on doing their best work. You’ll learn from people with high standards who are great at inspiring others to do more and go further. We value technical and personal growth, and see our internship program as a vehicle to foster both.
+
+Responsibilities
+Write software that will be used in production, and has meaningful impact to Stripe
+Give and receive technical feedback through code reviews or design discussions
+Collaborate with other engineers and cross-functional stakeholders to proactively seek and incorporate feedback
+Learn quickly by asking great questions, by working with your intern manager and teammates effectively, and by communicating the status of your work clearly
+Who you are
+We’re looking for someone who meets the minimum requirements to be considered for the role. If you meet these requirements, you are encouraged to apply. The preferred qualifications are a bonus, not a requirement.
+
+Minimum requirements
+A strong fundamental understanding of computer science through pursuit of a Bachelor’s, Master’s, or PhD degree in computer science, math, or a related discipline
+Some experience and familiarity with programming, either through side projects or classwork. We work mostly in Java, Ruby, JavaScript, Scala, and Go. We believe new programming languages can be learned if the fundamentals and general knowledge are present
+Experience from previous internships or other multi-person projects, including open source contributions, that demonstrate evaluating and receiving feedback from mentors, peers, and stakeholders
+Ability to learn unfamiliar systems and form an understanding of those systems, through independent research and working with a mentor and subject matter experts
+Preferred qualifications
+At least 2 years of university education, or equivalent work experience
+One or more areas of specialized knowledge balanced with general skills and knowledge, such as knowing more frontend technologies and, at a high level, how a service handles an HTTP request
+Understanding and some experience writing high quality pull requests, with good test coverage, and working knowledge to complete projects with minimal defects
+Familiarity with navigating and managing your work in new code bases, with multiple languages
+Ability to write clearly to explain your work to stakeholders, team members, and other Stripes
+
+Pay and benefits
+The annual US base salary range for this role is $123,500 - $123,500. For sales roles, the range provided is the role’s On Target Earnings ("OTE") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role. This salary range may be inclusive of several career levels at Stripe and will be narrowed during the interview process based on a number of factors, including the candidate’s experience, qualifications, and location. Applicants interested in this role and who are not located in the US may request the annual salary range for their location during the interview process.
+
+Additional benefits for this role may include: equity, company bonus or sales commissions/bonuses; 401(k) plan; medical, dental, and vision benefits; and wellness stipends.
