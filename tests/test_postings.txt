@@ -63,3 +63,222 @@ Pay and benefits
 The annual US base salary range for this role is $123,500 - $123,500. For sales roles, the range provided is the role’s On Target Earnings ("OTE") range, meaning that the range includes both the sales commissions/sales bonuses target and annual base salary for the role. This salary range may be inclusive of several career levels at Stripe and will be narrowed during the interview process based on a number of factors, including the candidate’s experience, qualifications, and location. Applicants interested in this role and who are not located in the US may request the annual salary range for their location during the interview process.
 
 Additional benefits for this role may include: equity, company bonus or sales commissions/bonuses; 401(k) plan; medical, dental, and vision benefits; and wellness stipends.
+
+### DELIM ###
+
+The financial industry is growing at a record pace, but our data providers are still stuck in the past — with cumbersome onboarding processes, complicated APIs, slow infrastructure, and expensive licensing costs.
+
+Databento is the next-generation market data provider — with the radical idea that you should only pay for the data that you use. We power the world's largest finance and fintech institutions and lower the barrier of entry for small startups.
+
+Since starting in 2019, we've raised over $27.8M in funding and have over 2,000 companies signed up pre-launch. Our team consists of former data users from firms like Two Sigma, Belvedere, Pico, Bloomberg, Pinterest, and Google.
+
+We offer health, dental, disability, and life insurance benefits, as well as 401(k) matching and visa sponsorships. We accommodate 100% remote work, with teammates living around the globe and paid in their local currency. 
+
+Responsibilities
+We have projects across the stack, from frontend UIs to backend APIs. Your projects will depend on your background and interests. 
+
+Desired Qualifications
+Experience with C++ or Python, ideally outside of the classroom (e.g. personal projects, internships, and co-ops) 
+University level coursework in computer science (e.g. operating systems, computer architecture, and algorithms)
+Knowledge of software design patterns and best practices
+Strong written and verbal communications skills
+A desire to work at a fast-growing fintech startup 
+No financial experience is required. We genuinely nurture each individual to become an integral part of society, no matter where you go in the future. After the internship, you'll have the option to work part-time throughout the year until graduation. We've hired interns from as early as sophomore year, who are now a core part of our team. This internship is 100% remote and location-agnostic, so you're welcome to live where ever you want - we can pay you in your local currency, and we sponsor H1Bs and other visas. 
+
+We accept applications on a rolling basis and are flexible on timing. Some internships last for the summer, while others last throughout the semester.
+
+ 
+
+Databento, Inc provides equal employment opportunities to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability, sexual orientation, gender identity or expression, veteran status, or genetics. In addition to federal law requirements, Databento complies with applicable state and local laws governing nondiscrimination in employment in every location in which the company has facilities. This policy applies to all terms and conditions of employment, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation and training. Pursuant to applicable laws, we will consider for employment qualified applicants with arrest and conviction records. And if you believe that you will need any type of accommodation, please let us know.
+
+Our recruiting data suggests that underrepresented applicants often downplay their skills. Even if your experience doesn’t exactly match the qualifications listed, we still want to hear from you. Please apply! 
+
+### DELIM ###
+
+What We Do
+
+With residents and partners, LISC forges resilient and inclusive communities of opportunity across America – great places to live, work, visit, do business and raise families.
+
+ 
+
+Strategies We Pursue
+
+Equip talent in underinvested communities with the skills and credentials to compete successfully for quality income and wealth opportunities.
+Invest in businesses, housing and other community infrastructure to catalyze economic, health, safety and educational mobility for individuals and communities.
+Strengthen existing alliances while building new collaborations to increase our impact on the progress of people and places.
+Develop leadership and the capacity of partners to advance our work together.
+Drive local, regional, and national policy and system changes that foster broadly shared prosperity and well-being.
+Since 1979, LISC and its affiliates have invested approximately $29.7 billion in businesses, affordable housing, health, educational mobility, community and recreational facilities, public safety, employment, and other projects that help to revitalize and stabilize underinvested communities. Headquartered in New York City, LISC’s reach spans the country from East coast to West coast in 38 markets with offices extending from Buffalo to San Francisco and in 2,400 rural counties across 49 states and Puerto Rico. Visit us at www.lisc.org
+
+ 
+
+Background
+
+Rural LISC supports 88 CBO partners serving more than 2,200 rural counties in 45 states. Over the last 25 years, Rural LISC’s investments in rural America have totaled $1 billion in grants, equity and low-cost loan funds. Rural LISC has leveraged this investment resulting in close to $3.6 billion from public and private sources, to produce 36,650 affordable homes and apartments, create 4.4 million square feet of commercial and community space, assist 750 businesses, create 12,500 jobs and support 20 early childhood centers.
+
+Internship Description
+
+The intern will be assisting in a variety of efforts.  Specific tasks will include conducting research; collecting, analyzing and entering data; researching funder and other rural community development information.  Duties would also include assisting the finance team with a variety of tasks, including but not limited to reviewing and processing expense reports and grants disbursement; preparing budget-to-actual and project-area reports; making project output database (MS Access) entries; and performing other tasks as assigned.
+
+The intern will be expected to work 20 hours per week.
+
+Internship Scope & Learning Opportunity
+
+Analyze financial data, learn accounting software and systems, present output and outcomes reports,
+Get experience in grant compliance and management. 
+Support Finance and Accounting Team and community development support to nonprofit organizations.
+QUALIFICATIONS
+
+Be in pursuit of a Bachelor’s or Master’s degree
+Be well-organized, self-motivated, and detail-oriented
+Have experience compiling large amounts of data into an easy-to-understand presentation
+Demonstrate excellent verbal and written communication skills
+Proficient in MS Office Suite
+Experience with Accounting software a plus
+LISC is an equal opportunity employer. LISC does not discriminate in employment on account of actual or perceived race, color, creed, religion, national origin, ancestry, citizenship status, age, sex or gender (including pregnancy, childbirth, lactation and related medical conditions), gender identity or expression (including transgender status), sexual orientation, marital status, military status or veteran status, unfavorable discharge from military service, physical or mental disability, protected medical condition as defined by applicable state or local law, genetic information or any other characteristic protected by applicable federal, state or local laws and ordinances.
+
+We will endeavor to make a reasonable accommodation to the known physical or mental limitations of a qualified applicant with a disability unless the accommodation would impose an undue hardship on the operation of our business.
+
+### DELIM ###
+
+Who We Are
+
+Addepar’s purpose is to maximize the positive impact of the world’s capital. More than 850 of the world’s leading financial services firms trust Addepar to unlock the power and possibility of informed, data-driven investing and advice. These family offices, wealth managers, banks and institutions use Addepar’s tech and data platform to deliver exceptional value to their clients in a modern, scalable and secure way. 
+
+Our clients use Addepar to manage and advise on more than $4 trillion in assets. Our board and investors are some of the best in the business: D1 Capital, WestCap, 8VC and Valor Equity Partners have led our last few rounds. 
+
+We’re now expanding Addepar’s business around the globe, with clients in more than 30 countries. We’re constantly doubling down on tech- and data-fueled innovation, and our product and platform roadmap is more ambitious today than ever. We place our clients at the center of everything we do, and see a virtually unlimited set of opportunities to expand our client footprint and deepen the value we can unlock by building together. 
+
+Addepar is a Forbes Fintech 50 company and an honored member of the CB Insights Fintech 250. Addepar embraces a global flexible workforce model with offices in Silicon Valley, New York City, Salt Lake City, Chicago, London, England, Edinburgh, Scotland and Pune, India.
+
+*Marketplace and brokerage services provided by Acervus Securities, Inc., an SEC registered broker‑dealer and member FINRA / SIPC.
+
+The Role
+We are currently seeking a Software Engineer to join our Analytics Platform Team! The Analytics Platform Team is the engineering team responsible for internal and external business analytics at Addepar.
+
+Engineering is at the core of Addepar. If want to do the best work of your career and enjoy shipping high quality code to production every day, we’re eager to meet you!
+
+What You’ll Do
+Help financial professionals make sense of trillions of dollars in assets.
+Design and implement new experimental client facing features.
+Create and support pipelines that transfer hundreds of millions of rows of data.
+Collaborate with product managers, engineers and customers.
+Who You Are
+A humble person who believes it's okay to fail as long as you try your best and learn from your mistakes.
+You can easily convey complex ideas both verbally and in written form.
+You love learning, believe in the right tool for the job and can pick up new technologies with ease.
+You have experience with high traffic systems dealing with significant amounts of data.
+Our Values 
+
+Act Like an Owner - Think and operate with intention, purpose and care. Own outcomes.
+Build Together - Collaborate to unlock the best solutions. Deliver lasting value. 
+Champion Our Clients - Exceed client expectations. Our clients’ success is our success. 
+Drive Innovation - Be bold and unconstrained in problem solving. Transform the industry. 
+Embrace Learning - Engage our community to broaden our perspective. Bring a growth mindset. 
+In addition to our core values, Addepar is proud to be an equal opportunity employer. We seek to bring together diverse ideas, experiences, skill sets, perspectives, backgrounds and identities to drive innovative solutions. We commit to promoting a welcoming environment where inclusion and belonging are held as a shared responsibility.
+
+To ensure the health and safety of all Addepeeps and our prospective candidates, we have instituted a virtual interview and onboarding experience.
+
+We will ensure that individuals with disabilities are provided reasonable accommodation to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment. Please contact us to request accommodation.
+
+PHISHING SCAM WARNING: Addepar is among several companies recently made aware of a phishing scam involving con artists posing as hiring managers recruiting via email, text and social media. The imposters are creating misleading email accounts, conducting remote “interviews,” and making fake job offers in order to collect personal and financial information from unsuspecting individuals. Please be aware that no job offers will be made from Addepar without a formal interview process. Additionally, Addepar will not ask you to purchase equipment or supplies as part of your onboarding process. If you have any questions, please reach out to TAinfo@addepar.com.
+
+### DELIM ###
+
+Who We Are
+
+Addepar’s purpose is to maximize the positive impact of the world’s capital. More than 850 of the world’s leading financial services firms trust Addepar to unlock the power and possibility of informed, data-driven investing and advice. These family offices, wealth managers, banks and institutions use Addepar’s tech and data platform to deliver exceptional value to their clients in a modern, scalable and secure way. 
+
+Our clients use Addepar to manage and advise on more than $4 trillion in assets. Our board and investors are some of the best in the business: D1 Capital, WestCap, 8VC and Valor Equity Partners have led our last few rounds. 
+
+We’re now expanding Addepar’s business around the globe, with clients in more than 30 countries. We’re constantly doubling down on tech- and data-fueled innovation, and our product and platform roadmap is more ambitious today than ever. We place our clients at the center of everything we do, and see a virtually unlimited set of opportunities to expand our client footprint and deepen the value we can unlock by building together. 
+
+Addepar is a Forbes Fintech 50 company and an honored member of the CB Insights Fintech 250. Addepar embraces a global flexible workforce model with offices in Silicon Valley, New York City, Salt Lake City, Chicago, London, England, Edinburgh, Scotland and Pune, India.
+
+*Marketplace and brokerage services provided by Acervus Securities, Inc., an SEC registered broker‑dealer and member FINRA / SIPC.
+
+The Role
+
+We are currently looking for an Investment Associate to join our new and growing Investment Advisory Solutions (IAS) team! The IAS team provides non-discretionary investment advice to family offices, institutional investors, and investment advisors. Through use of Addepar's proprietary data and technology, we are building diagnostics that pinpoint areas of improvement for portfolios, as well as designing investment strategies that have the potential to increase returns. In this role, you will participate in all activities of the business, including creation of new diagnostics and investment strategies, in addition to preparing for and participating in client meetings.
+
+Addepar takes a market-based approach to pay. A successful candidate’s starting pay will be determined based on the role, job-related skills, experience, qualifications, work location, and market conditions. The range displayed on each job posting reflects the minimum and maximum target base salary for roles in Colorado, California, and New York.
+
+The current range for this role is $97,000 - $151,000 + bonus + equity + benefits.
+
+Your recruiter can share more about the specific salary range for your preferred location during the hiring process. Additionally, these ranges reflect the base salary only, and do not include bonus, equity, or benefits.
+
+What You’ll Do
+Help develop new diagnostics and investment strategies by analyzing proprietary datasets using Python
+Build internal tools to efficiently run diagnostics and analyses at scale across the client base
+Prepare materials for and actively participate in prospect and client meetings
+Collaborate cross functionally with other teams at Addepar, including Product, Research, Engineering, Legal, and Marketing
+Who You Are
+Minimum 3 years of experience in an investment or financial industry role, such as portfolio strategy, investment banking, investment research, or risk management
+Broad understanding of most asset classes and markets, including alternative asset classes (e.g. private equity and venture capital)
+Strong Python programming skills and a solid foundation in statistics
+Outstanding communication skills, with the proven track record of articulating complex topics clearly to a variety of audiences
+Previous experience with Databricks is a plus
+Our Values 
+
+Act Like an Owner - Think and operate with intention, purpose and care. Own outcomes.
+Build Together - Collaborate to unlock the best solutions. Deliver lasting value. 
+Champion Our Clients - Exceed client expectations. Our clients’ success is our success. 
+Drive Innovation - Be bold and unconstrained in problem solving. Transform the industry. 
+Embrace Learning - Engage our community to broaden our perspective. Bring a growth mindset. 
+In addition to our core values, Addepar is proud to be an equal opportunity employer. We seek to bring together diverse ideas, experiences, skill sets, perspectives, backgrounds and identities to drive innovative solutions. We commit to promoting a welcoming environment where inclusion and belonging are held as a shared responsibility.
+
+To ensure the health and safety of all Addepeeps and our prospective candidates, we have instituted a virtual interview and onboarding experience.
+
+We will ensure that individuals with disabilities are provided reasonable accommodation to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment. Please contact us to request accommodation.
+
+PHISHING SCAM WARNING: Addepar is among several companies recently made aware of a phishing scam involving con artists posing as hiring managers recruiting via email, text and social media. The imposters are creating misleading email accounts, conducting remote “interviews,” and making fake job offers in order to collect personal and financial information from unsuspecting individuals. Please be aware that no job offers will be made from Addepar without a formal interview process. Additionally, Addepar will not ask you to purchase equipment or supplies as part of your onboarding process. If you have any questions, please reach out to TAinfo@addepar.com.
+
+### DELIM ###
+
+Who We Are
+
+Addepar’s purpose is to maximize the positive impact of the world’s capital. More than 850 of the world’s leading financial services firms trust Addepar to unlock the power and possibility of informed, data-driven investing and advice. These family offices, wealth managers, banks and institutions use Addepar’s tech and data platform to deliver exceptional value to their clients in a modern, scalable and secure way. 
+
+Our clients use Addepar to manage and advise on more than $4 trillion in assets. Our board and investors are some of the best in the business: D1 Capital, WestCap, 8VC and Valor Equity Partners have led our last few rounds. 
+
+We’re now expanding Addepar’s business around the globe, with clients in more than 30 countries. We’re constantly doubling down on tech- and data-fueled innovation, and our product and platform roadmap is more ambitious today than ever. We place our clients at the center of everything we do, and see a virtually unlimited set of opportunities to expand our client footprint and deepen the value we can unlock by building together. 
+
+Addepar is a Forbes Fintech 50 company and an honored member of the CB Insights Fintech 250. Addepar embraces a global flexible workforce model with offices in Silicon Valley, New York City, Salt Lake City, Chicago, London, England, Edinburgh, Scotland and Pune, India.
+
+*Marketplace and brokerage services provided by Acervus Securities, Inc., an SEC registered broker‑dealer and member FINRA / SIPC.
+
+The Role
+For more than a decade, Addepar has revolutionised how investment managers analyse and report investor portfolio data. We combine state-of-the-art infrastructure with flexible data analysis and customisable reporting capabilities, so our clients deliver tailored, meaningful interactions to investors. Over 500 firms ranging from family offices to financial advisers to global banks choose Addepar, and that number will continue to grow in 2021.
+
+As part of our continued growth, we now have an established office in Edinburgh. We’re looking for a Portfolio Data Operations Analyst to join our Portfolio Data Operations team.
+
+Part of the broader Addepar Product organisation, the Portfolio Data Operations team is responsible for ensuring Addepar's clients have timely and high quality data. This will include overseeing the processing of transactions and positions so that it meets client timelines, ensuring data quality through verification checks, and helping clients with their data support questions. The Data Operations team sits at the nexus of Addepar's activity and requires daily communications with data providers, clients, and other personnel within Data Operations and across the firm.
+
+What You’ll Do
+Perform daily internal verification checks to ensure portfolio account data is accurate and available within SLAs.
+Investigate and troubleshoot data pipeline issues and data feed processing exceptions, and triage with Engineering Support when needed.
+Complete and maintain operational workflows, and identify and implement opportunities for optimization.
+Collaborate with Client Support, Solution Architects, and other members of Sales and Services to address client data inquiries and requests.
+Partner with Product and Engineering to design, test, and implement new processes and tooling features that improve data quality as well as increase operational efficiency.
+Participate in broad company initiatives to stand up new product offerings and services.
+Who You Are
+2+ years of work experience in the financial investment/advisory industry with deep knowledge of capital markets, trade processing and lifecycle, and middle/back-office operations systems.
+Demonstrates excellent attention to details and a passion for problem solving!
+Outstanding communication and interpersonal skills for engaging with internal and external stakeholders.
+Proven track record of multitasking and prioritizing effectively in a fast paced environment.
+Very team-oriented, balanced, and forward thinking.
+Technical skills preferred in any or all of the following: Microsoft Excel, VBA, SQL, Python, Salesforce, Jira, Bloomberg, Thomson Reuters, or other common financial services systems and applications.
+Our Values 
+
+Act Like an Owner - Think and operate with intention, purpose and care. Own outcomes.
+Build Together - Collaborate to unlock the best solutions. Deliver lasting value. 
+Champion Our Clients - Exceed client expectations. Our clients’ success is our success. 
+Drive Innovation - Be bold and unconstrained in problem solving. Transform the industry. 
+Embrace Learning - Engage our community to broaden our perspective. Bring a growth mindset. 
+In addition to our core values, Addepar is proud to be an equal opportunity employer. We seek to bring together diverse ideas, experiences, skill sets, perspectives, backgrounds and identities to drive innovative solutions. We commit to promoting a welcoming environment where inclusion and belonging are held as a shared responsibility.
+
+To ensure the health and safety of all Addepeeps and our prospective candidates, we have instituted a virtual interview and onboarding experience.
+
+We will ensure that individuals with disabilities are provided reasonable accommodation to participate in the job application or interview process, to perform essential job functions, and to receive other benefits and privileges of employment. Please contact us to request accommodation.
+
+PHISHING SCAM WARNING: Addepar is among several companies recently made aware of a phishing scam involving con artists posing as hiring managers recruiting via email, text and social media. The imposters are creating misleading email accounts, conducting remote “interviews,” and making fake job offers in order to collect personal and financial information from unsuspecting individuals. Please be aware that no job offers will be made from Addepar without a formal interview process. Additionally, Addepar will not ask you to purchase equipment or supplies as part of your onboarding process. If you have any questions, please reach out to TAinfo@addepar.com.
