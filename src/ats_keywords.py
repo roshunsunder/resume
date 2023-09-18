@@ -15,13 +15,13 @@ class Keywords():
     def __init__(self):
         pass
 
-    def extract_keywords_from_posting(self, prompt: str, job_posting_content: str) -> str:
+    def extract_keywords_from_posting(self, prompt: str, job_posting_content: str, model: str = "gpt-4") -> str:
         """
         Extracts keywords from a job posting.
         """
         
         extract_keywords_prompt = prompt.format(job_posting_content=job_posting_content)
 
-        keywords = llm.get_completion(extract_keywords_prompt, model="gpt-3.5-turbo")
+        keywords = llm.get_completion(extract_keywords_prompt, model=model)
         return keywords
         
