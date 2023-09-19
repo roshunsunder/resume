@@ -1,0 +1,14 @@
+{
+  "name": "javascriptdocx",
+  "version": "1.0.0",
+  "description": "Workflow for docx manipulation",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docx": "^8.2.2"
+  }
+}
