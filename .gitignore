@@ -4,3 +4,4 @@ node_modules
 virtualenv
 *.docx
 __pycache__
+testData.json
