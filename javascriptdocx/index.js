@@ -130,7 +130,7 @@ class EducationSection {
             new Paragraph({
                 children : [
                     new TextRun({
-                        text: this.info.relevantCoursework.join(", ")
+                        text: `Relevant Coursework: ${this.info.relevantCoursework.join(", ")}`
                     })
                 ],
                 bullet: {
@@ -195,11 +195,7 @@ class Resume {
         this.candidateInfo = candidateInfo;
         this.sections = [];
         for (const key in jsonData) {
-            if (key === "Education") {
-                this.sections.unshift(new EducationSection(jsonData[key]));
-            } else {
-                this.sections.push(new ItemizedSection(key.toUpperCase(), jsonData[key]));
-            }
+            this.sections.push(new ItemizedSection(key.toUpperCase(), jsonData[key]));
         }
     }
 
@@ -209,7 +205,7 @@ class Resume {
                 alignment: AlignmentType.CENTER,
                 children: [
                     new TextRun({
-                        text: this.candidateInfo.name,
+                        text: this.candidateInfo.Bio.name,
                         bold: true,
                         size: 36
                     })
@@ -219,20 +215,27 @@ class Resume {
                 alignment: AlignmentType.CENTER,
                 children: [
                     new TextRun({
-                        text: this.candidateInfo.address,
+                        text: this.candidateInfo.Bio.address,
                     }),
                     new TextRun({
-                        text: `${this.candidateInfo.phone} | ${this.candidateInfo.email} ${this.candidateInfo.website ? `| ${this.candidateInfo.website}` : ""}`,
+                        text: `${this.candidateInfo.Bio.phone} | ${this.candidateInfo.Bio.email} ${this.candidateInfo.Bio.website ? `| ${this.candidateInfo.Bio.website}` : ""}`,
                         break:1
                     }),
                 ],
 
-            }) 
+            }),
+            new Paragraph("")
         ];
+
+        res = res.concat(new EducationSection(this.candidateInfo.Education).render());
+        res.push(new Paragraph(""));
+
+
         for (const section of this.sections) {
             res = res.concat(section.render());
             res.push(new Paragraph(""));
         }
+
         const autoDoc = new Document({
             sections: [
                 {
