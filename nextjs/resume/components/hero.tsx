@@ -1,9 +1,30 @@
+'use client'
+import React, {useEffect} from 'react';
 import VideoThumb from '@/public/images/hero-image-01.jpg'
 import ModalVideo from '@/components/modal-video'
 
 export default function Hero() {
+  useEffect(() => {
+    const setHeroHeight = () => {
+      const heroSection = document.getElementById('hero_section');
+      if (heroSection) {
+        heroSection.style.minHeight = `${window.innerHeight}px`;
+      }
+    };
+
+    // Set initial height
+    setHeroHeight();
+
+    // Update on resize
+    window.addEventListener('resize', setHeroHeight);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener('resize', setHeroHeight);
+    };
+  }, []);
   return (
-    <section>
+    <section id="hero_section">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
 
         {/* Illustration behind hero content */}
@@ -24,10 +45,10 @@ export default function Hero() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4" data-aos="fade-up">Never write a resume again.</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Hit the button to get started</p>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Automatically write your resumes, cover letters, and job application questions with your personalized AI job assistant. Tailored for specific jobs and ATS-optimized.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#features_section">Get Started</a>
+                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#upload_section">Get Started</a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
                 <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>

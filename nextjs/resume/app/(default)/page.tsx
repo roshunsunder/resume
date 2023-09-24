@@ -7,10 +7,11 @@ import Hero from '@/components/hero'
 import UploadArea from '@/components/upload'
 
 export default function Home() {
+
   return (
     <>
       <Hero />
-      <div id='features_section'>
+      <div id='upload_section'>
        <UploadArea />
       </div>
     </>
