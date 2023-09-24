@@ -4,8 +4,7 @@ import ModalVideo from '@/components/modal-video'
 export default function Hero() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
-
+      <div className="h-screen max-w-6xl mx-auto px-4 sm:px-6 relative">
         {/* Illustration behind hero content */}
         <div className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none" aria-hidden="true" data-aos="fade-up" data-aos-delay="400">
           <svg className="max-w-full" width="564" height="552" viewBox="0 0 564 552" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,8 +22,9 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">Never write a resume again.</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Hit the button to get started</p>
+            <h1 className="h1 mb-4" data-aos="fade-up">Introducing your AI-powered job application assistant.</h1>
+            <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">Automatically write your resumes, cover letters, and job application questions.</p>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Tailored for specific jobs and ATS-optimized.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#features_section">Get Started</a>
