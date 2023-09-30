@@ -1,6 +1,9 @@
+import Link from "next/link";
 import DocPreview from "./document-preview";
+
 export default function UploadArea() {
-    return (
+
+  return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="flex flex-row w-full max-w-5xl p-8 bg-white shadow-lg rounded-lg">
         {/* Left Section */}
@@ -23,9 +26,16 @@ export default function UploadArea() {
 
           {/* Step 3: Submit Button */}
           <div data-aos="fade-up" className="text-xl text-slate-700 font-semibold mt-8 mb-2">Step 3: Let Us Do The Work</div>
-          <button data-aos="fade-up" className="px-4 py-2 rounded bg-sky-400 text-white shadow hover:bg-sky-500">
+          {/* <button 
+            data-aos="fade-up" 
+            className="btn px-4 py-2 rounded bg-sky-400 text-white shadow hover:bg-sky-500"
+            href="/edit"
+          >
             Submit
-          </button>
+          </button> */}
+          <Link href="/edit" data-aos="fade-up" className="btn-sm px-4 py-2 rounded bg-sky-400 text-white shadow hover:bg-sky-500">
+            Submit
+          </Link>
         </div>
 
         {/* Right Section */}

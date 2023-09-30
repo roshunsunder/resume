@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Sign Up - Open PRO',
-  description: 'Page description',
+  title: 'Sign Up',
+  description: 'Make a new account',
 }
 
 import Link from 'next/link'
@@ -13,7 +13,7 @@ export default function SignUp() {
 
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h1 className="h1">Welcome. We exist to make entrepreneurship easier.</h1>
+            <h1 className="h1">Put your best foot forward</h1>
           </div>
 
           {/* Form */}
@@ -62,7 +62,7 @@ export default function SignUp() {
                 </div>
               </div>
               <div className="text-sm text-gray-500 text-center">
-                I agree to be contacted by Open PRO about this offer as per the Open PRO <Link href="#" className="underline text-gray-400 hover:text-gray-200 hover:no-underline transition duration-150 ease-in-out">Privacy Policy</Link>.
+                I agree to be contacted by Resume Tool about this offer as per the Resume Tool <Link href="#" className="underline text-gray-400 hover:text-gray-200 hover:no-underline transition duration-150 ease-in-out">Privacy Policy</Link>.
               </div>
               <div className="flex flex-wrap -mx-3 mt-6">
                 <div className="w-full px-3">
@@ -71,7 +71,7 @@ export default function SignUp() {
               </div>
             </form>
             <div className="text-gray-400 text-center mt-6">
-              Already using Open PRO? <Link href="/signin" className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out">Sign in</Link>
+              Already using Resume Tool? <Link href="/signin" className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out">Sign in</Link>
             </div>
           </div>
 
