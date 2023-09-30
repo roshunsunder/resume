@@ -5,3 +5,4 @@ virtualenv
 *.docx
 __pycache__
 testData.json
+exampleData.js
