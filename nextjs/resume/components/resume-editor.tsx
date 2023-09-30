@@ -50,16 +50,15 @@ interface CandidateInfo {
 
 interface Props {
     resumeData: ResumeData;
+    updateSharedState: (newState: any) => void;
 }
 
 
-const ResumeEditor: React.FC<Props> = ({ resumeData }) => {
+const ResumeEditor: React.FC<Props> = ({ resumeData, updateSharedState }) => {
     const [localResumeData, setLocalResumeData] = useState<ResumeData>(resumeData);
+    updateSharedState(localResumeData);
 
-    const doNothing = (data : any) => {
-        return;
-    }
-    
+
     useEffect(() => {
         const textareas = document.querySelectorAll('textarea');
         textareas.forEach(textarea => {
@@ -68,25 +67,25 @@ const ResumeEditor: React.FC<Props> = ({ resumeData }) => {
         });
     }, [localResumeData]);
     const updateDescription = (
-        section: keyof ResumeData,
-        index: number,
-        descriptionIndex: number,
-        newValue: string
-    ) => {
-        const updatedSection = [...localResumeData[section]];
-        updatedSection[index].description[descriptionIndex] = newValue;
+            section: keyof ResumeData,
+            index: number,
+            descriptionIndex: number,
+            newValue: string
+        ) => {
+            const updatedSection = [...localResumeData[section]];
+            updatedSection[index].description[descriptionIndex] = newValue;
 
-        const updatedResumeData = {
-            ...localResumeData,
-            [section]: updatedSection,
-        };
+            const updatedResumeData = {
+                ...localResumeData,
+                [section]: updatedSection,
+            };
 
         setLocalResumeData(updatedResumeData);
-        doNothing(updatedResumeData);
+        updateSharedState(updatedResumeData);
     };
 
     return (
-        <div className="space-y-4 w-1/2"> {/* Added spacing between each section */}
+        <div className="space-y-4"> {/* Added spacing between each section */}
             {(['Experience', 'Projects'] as Array<keyof ResumeData>).map((section) => (
                 <div key={section} className="p-4 bg-gray-100 rounded-md"> {/* Styling for each section */}
                     <h2 className="font-bold text-black">{section}</h2> {/* Made the text bold */}
