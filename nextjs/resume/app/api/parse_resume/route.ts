@@ -5,6 +5,17 @@ import { headers } from 'next/headers';
 import { get_encoding, encoding_for_model } from "@dqbd/tiktoken";
 
 
+/**
+Example resume tailoring prompts:
+
+- Tailor my resume to this [JOB TITLE] at [COMPANY] using this job description. Copy + paste your resume and the job description.
+- Using my current resume, how should I re-write it if I'm applying to [JOB TITLE] at [COMPANY]? Copy + paste your resume and the job description.
+- Re-write this work experience to be more impressive and tailored for this [JOB TITLE]. Copy + paste one specific work experience section from your resume and the job description. 
+- Using my current resume, re-write my bullet points to include metrics and achievements to match this job description. Copy + paste your resume and the job description.
+- Using this job description, give me a list of 10 skills I should highlight on my resume. Copy + paste the job description.
+- I want to make a career pivot to [JOB TITLE] at [COMPANY]. Using my resume and this job description, tell me which skills I should highlight as transferable skills.
+ */
+
 // Initialize environment variables
 import * as dotenv from 'dotenv';
 dotenv.config();
@@ -183,29 +194,44 @@ Output your response as JSON with the following keys:
 `;
 }
 
+// You will be given a job description, delimited by triple quotes. Then you will be given the resume and experiences of a candidate for the job in JSON format. \
+
+// You will tailor and rewrite the candidate's resume to align with the job description, highlighting experiences relevant to the job. \
+// To do this, you will rewrite the candidate's experiences to better match the job description's language, in the tone of an intelligent and knowledgeable \
+// worker.
+
+// Follow these steps to edit the resume:
+// 1. You will read the job description and understand its responsibilities and qualifications.
+// 2. You will identify all relevant technical ATS keywords and phrases from the job description that candidates should include in their resumes.
+// 3. You will read through the candidate's resume in JSON. You will understand the candidate's work, research, project experiences, and qualifications.
+// 4. Then you will rewrite and tailor the candidate's resume. To do this, you will elaborate on each experience summary by smoothly integrating relevant ATS keywords and phrases. Reword each summary to align with the job description.
+// 5. You will condense each reworded summary into a list of bullet points, as a list of strings in JSON.
+// 6. You will output the condensed bullet points as a list of strings for the "summary" key of the experiences in the JSON output.
+
+// You will follow these rules when editing:
+// - DO NOT add work experiences if not present in the candidate's original resume.
+// - DO NOT LIE about hard skills or include false information not present in the candidate's original resume.
+// - DO NOT change any information about the candidate's education or education level.
+// - Ensure the summary descriptions are written in THIRD PERSON. 
+// - Ensure the rewritten resume in JSON is AT MOST 500 words long.
+
 // 4. Feel free to embellish each summary of the candidate's experiences. That is, include soft skills if they are not originally written in the candidate experiences. \
 // However, DO NOT include hard skills if they were not in the candidate experiences originally.
 
 function tailorResumeFromJobPostingPrompt(resumeJSON: string, jobPostingText: string) {
-  return `You are a resume building expert.  
+  return `You are a resume building expert. Your task is to tailor an existing candidate resume in JSON to match the following job posting.
 
-You will be given a job description, delimited by triple quotes. You will understand the roles and responsibilities of the job. \
-You will also understand the qualifications of the job.  Then you will be given the experiences of a candidate for the job in JSON format.
 
-Your task is to tailor and rewrite the candidate's resume to align with the job description, highlighting experiences relevant to the job. \
-Rewrite the candidate's experiences to better match the job description's language.
+You will be given a job description, delimited by triple quotes.  You will understand the responsibilities and qualifications of the job.  \
+Then you will be given the experiences of a candidate for the job in JSON format.
 
-Follow these steps to edit the resume:
-1. Go through all the candidate's work, research, and project experiences.
-2. Identify all the relevant technical ATS keywords and phrases that candidates should include in their resumes to match the job role's requirements.
-3. Elaborate on each summary by smoothly integrating the relevant ATS keywords and phrases - reword each summary to align with the job description.
-4. Condense each reworded summary into a list of bullet points that are evenly dispersed.
-5. Include the condensed list of bullet points as the "summary" key for each experience.
+You will tailor and rewrite the candidate's resume to match and align with the job description, highlighting experiences relevant to the job. \
+Rewrite the candidate's experiences' summaries to better match the job description's language. \
+Rewrite each experience summary to be more impressive and tailored for the given job role.
 
-You will follow these rules when editing:
-- DO NOT add work experiences if not present in the candidate's original experiences.
-- DO NOT change any information about the candidate's education or education level.
-- Ensure the summary descriptions are written in THIRD PERSON. 
+Follow these rules when rewriting:
+- DO NOT add work experiences if not present in the candidate's original resume.
+- DO NOT LIE about hard skills or include false information not present in the candidate's original resume.
 
 ### Job Description:
 """${jobPostingText}"""
@@ -304,7 +330,7 @@ async function extractKeywordsFromJobPosting(jobPostingText: string, temp: numbe
  * @param jobPostingText The job posting text to tailor the resume for.
  * @returns The tailored resume text.
  */
-async function tailorResumeFromJobPosting(resumeJSON: string, jobPostingText: string, temp: number = 0.8) {
+async function tailorResumeFromJobPosting(resumeJSON: string, jobPostingText: string, model: "gpt-3.5-turbo-instruct", temp: number = 0.8) {
   console.log("Tailoring resume to job posting...");
 
   const enc = encoding_for_model("gpt-3.5-turbo");
@@ -316,7 +342,7 @@ async function tailorResumeFromJobPosting(resumeJSON: string, jobPostingText: st
   console.log(prompt);
 
   const response = await getOpenAICompletion({
-    model: "gpt-3.5-turbo-instruct",
+    model: model,
     prompt: prompt,
     temperature: temp,
     maxTokens: maxTokens,
@@ -340,6 +366,12 @@ async function tailorResumeFromJobPosting(resumeJSON: string, jobPostingText: st
   // });
 
   // return response.choices[0].message.content;
+}
+
+/**
+ * Refines a resume JSON string given the 
+ */
+async function refineResume() {
 }
 
 /**
@@ -429,7 +461,7 @@ async function tailorResumePipeline(resumeRawText: string, jobPostingText: strin
   // Else tailor resume from keywords
   // const keywords = await extractKeywordsFromJobPosting(jobPostingText);
   // const tailoredResume = await tailorResumeFromKeywords(resumeJSON, keywords);
-  const tailoredResume = await tailorResumeFromJobPosting(resumeJSON, jobPostingText, 1);
+  const tailoredResume = await tailorResumeFromJobPosting(resumeJSON, jobPostingText, "gpt-3.5-turbo-instruct", 1);
   console.log(tailoredResume);
 
   encoding.free();
